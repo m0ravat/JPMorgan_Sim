@@ -4,16 +4,13 @@ public class RewardValue {
     public RewardValue(double cash) {
         this.cash = cash;
     }
-    public double getCash() {
-        return cash;
+    public RewardValue(int miles){
+        this.cash = miles * rate;
     }
-    public void setCash(double cash) {
-        this.cash = cash;
+    public double getCashValue() {
+        return cash;
     }
     public double getMilesValue() {
         return this.cash / this.rate;
-    }
-    public void setMiles(double miles) {
-        this.miles=miles;
     }
 }
